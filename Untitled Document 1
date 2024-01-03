@@ -1,0 +1,40 @@
+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
+
+
+230944225046	
+
+
+Shinde Samir Dadasaheb
+
+
+
+subbeam = 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
+
+user_name = sunbeam-dbda
+
+
+~/Desktop/all_python_advance_analytics_notes/Big_Data/BigData/data
+
+LOAD DATA
+LOCAL INPATH '/home/samir/Desktop/all_python_advance_analytics_notes/Big_Data/BigData/data/movies/emp.csv'
+INTO TABLE contacts;
+
+
+
+
+CREATE TABLE temp_movies (
+	movieID INT,
+	title STRING,
+	genres STRING
+	
+)
+ROW FORMAT 
+DELIMITED FIELDS TERMINATED BY '^'
+STORE AS TEXTFILE
+TBLPROPERTIES('skip.header.line.count'=1);
+
+
+
+LOAD DATA
+LOCAL INPATH '/home/samir/Desktop/all_python_advance_analytics_notes/Big_Data/BigData/data/movies/ratings.csv'
+INTO TABLE ratings_staging;
